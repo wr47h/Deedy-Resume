@@ -1,0 +1,253 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Rodolfo}{Ferro}{ \urlstyle{same}
+\href{https://rodolfoferro.github.io/cv/}{rodolfoferro.github.io/cv}\\
+\href{mailto:ferro@cimat.mx}{ferro@cimat.mx} | +524771606285 |
+\href{mailto:rodolfoferroperez@gmail.com}{rodolfoferroperez@gmail.com}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education}
+
+\subsection{University of \newline Guanajuato}
+\descript{BS in Mathematics}
+\location{Aug 2011 - NOW | Guanajuato, GTO}
+\sectionsep
+
+% \subsection{Cornell University}
+% \descript{BS in Computer Science}
+% \location{May 2014 | Ithaca, NY}
+% College of Engineering \\
+% Magna Cum Laude\\
+% \location{ Cum. GPA: 3.83 / 4.0 \\
+% Major GPA: 3.9 / 4.0}
+% \sectionsep
+
+% \subsection{La Martiniere for Boys}
+% \location{Grad. May 2011|  Kolkata, India}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links}
+GitHub:// \href{https://github.com/RodolfoFerro}{\bf RodolfoFerro} \\
+Twitter://  \href{https://twitter.com/FerroRodolfo}{\bf @FerroRodolfo} \\
+Facebook:// \href{https://facebook/ferro.11}{\bf ferro.11} \\
+LinkedIn://  \href{https://www.linkedin.com/in/rodolfoferro}{\bf rodolfoferro} \\
+Campus Expert:// \href{https://githubcampus.expert/RodolfoFerro/}{\bf RodolfoFerro}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Interests}
+% \subsection{Graduate}
+Machine Learning, Deep Learning \\
+Computer Vision, Image Processing \\
+Cloud Computing, Hackathons \\
+Tech Talks, Workshops \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+% \location{Subtitle:}
+Python \textbullet{} C \textbullet{} C++ \textbullet{} R\\
+Processing \textbullet{} JS \textbullet{} \LaTeX\
+\sectionsep
+
+\subsection{Frameworks}
+NumPy \textbullet{} Matplotlib \textbullet{} Pandas \\
+OpenCV \textbullet{} GPFlow \textbullet{} Keras \\
+Flask \textbullet{} PyGame \textbullet{} PIL
+\sectionsep
+
+\subsection{Tech Tools}
+GitHub \textbullet{} Linux \textbullet{} Mac \\
+Jupyter \textbullet{} Atom \textbullet{} Heroku \\
+iTerm \textbullet{} Raspberry Pi
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.66\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     ACTUAL ACTIVITY
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Actual activity}
+\runsubsection{Harvard University}
+\descript{| Summer Internship Project Dev }
+\location{June 2017 - Present | Cambridge, MA \& Guanajuato, GTO}
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+% \begin{tightemize}
+% \item Development of a Python library to predict and calibrate molecular properties.
+% \end{tightemize}
+\sectionsep
+
+\runsubsection{Future·Lab}
+\descript{| Co-Founder + Tech Manager }
+\location{Jan 2013 – May 2013 | Guanajuato, GTO}
+\sectionsep
+
+\runsubsection{GitHub Education}
+\descript{| GitHub Campus Expert }
+\location{October 2017 – Present | Guanajuato, GTO}
+\sectionsep
+
+\runsubsection{Reading Group on Deep Learning}
+\descript{| Organizing Comitee Member @ CIMAT A.C. }
+\location{Jan 2013 – May 2013 | Guanajuato, GTO}
+\sectionsep
+
+\runsubsection{def Podcast(mx):}
+\descript{| Owner + Host @ Web Podcast }
+\location{Jan 2013 – May 2013 | Guanajuato, GTO}
+\sectionsep
+
+\runsubsection{El Aguijón Medios}
+\descript{| Host @ Radio Universidad de Guanajuato }
+\location{Jan 2013 – May 2013 | Guanajuato, GTO}
+\sectionsep
+
+\runsubsection{Clubes de Ciencia México}
+\descript{| Organizing Comitee Member + Instructor + Developer }
+\location{Jan 2013 – May 2013 | Guanajuato, GTO}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     TALKS AND EVENTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Talks and Events}
+\runsubsection{<DevNights/>}
+\descript{| Tech Talks}
+\location{Jan 2018, Sep 2017, Nov 2016 | Tepache Hacklab @ León, GTO}
+\sectionsep
+
+\runsubsection{PRIMER CONGRESO NACIONAL DE CIENCIA COMPUTACIONAL APLICADA}
+\descript{| Tech Talk}
+\location{Oct 2017 | IEEE Student Branch @ Salamanca, GTO}
+\sectionsep
+
+\runsubsection{PythonDay México}
+\descript{| Workshop}
+\location{Jun 2017 | TelmexHub @ Mexico City, CDMX}
+\sectionsep
+
+\runsubsection{FESTIVAL LATINOAMERICANO DE INSTALACIÓN DE SOFTWARE LIBRE (FLISoL) 2017}
+\descript{| Workshop}
+\location{Apr 2017 | ITL @ León, GTO}
+\sectionsep
+
+\runsubsection{Google Developer Group León}
+\descript{| Tech Talk}
+\location{Jul 2016 | Tepache Hacklab @ León, GTO}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards}
+\begin{tabular}{rll}
+Nov 2017 & 1\textsuperscript{st} place & SWITCH Hackathon \\
+Oct 2017 & 1\textsuperscript{st} place & IBM Hackapalooza Hackathon \\
+Aug 2017 & Local Award                 & `Premio Municipal de la Juventud Guanajuato' \\
+May 2017 & 1\textsuperscript{st} place & Centro Fox Hackathon \\
+Mar 2017 & Local Award                 & `Guanajuato TALEN-TIC' \\
+Oct 2016 & International Award         & iGEM 2016 Giant Jamboree \\
+Apr 2016 & 1\textsuperscript{st} place & Hackbajío Fintech Hackathon \\
+\end{tabular}
+\sectionsep
+
+\end{minipage}
+\end{document}  \documentclass[]{article}
