@@ -47,6 +47,7 @@
 
 \documentclass[]{deedy-resume-openfont}
 \usepackage{fancyhdr}
+\usepackage{graphicx}
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -78,6 +79,14 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{minipage}[t]{0.33\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PHOTO
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Photo}
+\includegraphics[width=0.8\textwidth]{me}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EDUCATION
@@ -173,9 +182,14 @@ iTerm \textbullet{} Raspberry Pi
 % \end{tightemize}
 \sectionsep
 
+\runsubsection{CONACYT}
+\descript{| Research Assistant @ CIMAT A.C. }
+\location{Feb 2018 – Present | Guanajuato, GTO}
+\sectionsep
+
 \runsubsection{Future·Lab}
 \descript{| Co-Founder + Tech Manager }
-\location{Jan 2013 – May 2013 | Guanajuato, GTO}
+\location{Apr 2017 – Present | Guanajuato, GTO}
 \sectionsep
 
 \runsubsection{GitHub Education}
@@ -185,17 +199,17 @@ iTerm \textbullet{} Raspberry Pi
 
 \runsubsection{Reading Group on Deep Learning}
 \descript{| Organizing Comitee Member @ CIMAT A.C. }
-\location{Jan 2013 – May 2013 | Guanajuato, GTO}
+\location{Sep 2017 – Present | Guanajuato, GTO}
 \sectionsep
 
 \runsubsection{def Podcast(mx):}
 \descript{| Owner + Host @ Web Podcast }
-\location{Jan 2013 – May 2013 | Guanajuato, GTO}
+\location{Jul 2017 – Present | Guanajuato, GTO}
 \sectionsep
 
 \runsubsection{El Aguijón Medios}
 \descript{| Host @ Radio Universidad de Guanajuato }
-\location{Jan 2013 – May 2013 | Guanajuato, GTO}
+\location{Oct 2016 – Present | Guanajuato, GTO}
 \sectionsep
 
 \runsubsection{Clubes de Ciencia México}
